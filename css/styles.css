@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d202b;
+}
+
+/* ================================== */
+/*              Header               */
+/* ================================== */
+
+.title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 40px;
+}
+
+#about,
+#projects {
+    font-family: 'Rock Salt', cursive;
+    font-size: 40px;
+    color: white;
+    padding-top: 50px;
+}
+
+.jumbotron {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    background: rgb(224,151,12);
+    background: linear-gradient(146deg, rgba(224,151,12,1) 0%, rgba(19,127,135,1) 39%, rgba(8,41,85,1) 72%);  
+}
+
+.jumbotron .welcome {
+    padding-bottom: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    font-size: 50px;
+}
+
+/* ================================== */
+/*             About Me               */
+/* ================================== */
+
+
+.container {
+    padding-bottom: 50px;
+}
+
+.about-me .container {
+    padding-left: 20px;
+}
+
+.about-text {
+    margin: 40px 0;
+    color: white;
+}
+
+/* ================================== */
+/*              Projects              */
+/* ================================== */
+
+.conatiner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    border-bottom: 1px solid rgba(19,127,135,1);
+    padding-bottom: 100px;
+}
+
+.container .box {
+    position: relative;
+    width: 280px;
+    height: 185px;
+    background: rgba(113, 158, 200, 0.561);
+    margin: 50px 20px 0 20px;
+    display: inline-block;
+}
+
+.container .box .imgbox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box .text {
+    position: absolute;
+    top: 10px;
+    left:10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .text {
+    transform: scaleY(1);
+}
+
+.container .box .text .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .text .content h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: rgb(61, 207, 251);
+}
+
+.container .box .text .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.box a {
+    margin: 30px 0;
+    padding: 6px 30px;
+    background-color: rgba(19,127,135,1);
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box .live {
+    margin-left: 45px;
+}
+
+.box a:hover {
+    background-color: rgba(61, 207, 251, 0.7);
+    color: white;
+}
+
+/* .project .arrow-3 {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    font-size: 50px;
+    color: rgba(19,127,135,1);
+} */
+
+
+/* ================================== */
+/*               Footer               */
+/* ================================== */
+
+.linkedin,
+.github,
+.email {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+
+/* ================================== */
+/*          Media Breakpoints         */
+/* ================================== */
+
+/* Padding for larger phone screens */
+
+@media (min-width: 425px) {
+    .container {
+        padding-left: 55px;
+    }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+      padding-left: 50px;
+  }
+
+  .imgbox img {
+    -webkit-box-shadow: 11px 11px 14px 1px rgba(61, 207, 251, 0.7);
+    -moz-box-shadow: 11px 11px 14px 1px rgba(61, 207, 251, 0.7);
+    box-shadow: 11px 11px 14px 1px rgba(61, 207, 251, 0.7);
+  }
+
+  .arrow {
+    top: 75%;
+    left: 49%;
+  }
+
+  .arrow-2 {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    font-size: 50px;
+    color: rgba(19,127,135,1);
+}
+}
+
+
+@media (min-width: 1024px) {
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .container .box {
+        width: 45%;
+        height: 287px;
+    }
+
+    .box .live {
+        margin-left: 120px;
+    }
+}
+
+@media (min-width:1800px) {
+   .arrow-2 {
+       display: none;
+   }
+}
