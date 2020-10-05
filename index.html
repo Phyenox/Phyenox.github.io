@@ -11,33 +11,42 @@
 <body>
   <header>
 
-    <nav class="nav py-2">
-        <a class="nav-link active" href="#about">About</a>
+
+    <ul class="nav nav-pills py-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
-    </nav>
+      </li>
+    </ul>
+
 
     <!-- Jumbotron -->
+    <div class="stary">
     <div class="jumbotron text-center text-white">
         <h1 class="display-4 title pb-3">Samantha Millar</h1>
-        <p class="lead mb-0 pt-5 welcome">Welcome to my Portfolio</p> 
+        <p class="lead mb-0 pt-3 welcome">Welcome to my Portfolio</p> 
         <p class="arrow">&triangledown;</p>   
     </div>  
+  </div>
    
   </header>  
     
   <main>
     <!-- About Me -->
-    <h2  id="about" class="display-4 text-center mt-5">About Me</h2>
-    <div class="about-me">
-    <div class="container">
-      <p class="about-text text-center">My names Samantha Millar and I've recently completed the Treehouse Techdegree course in Front-End Web Development.
-        It's been so much fun learning new skills and I'm looking forward to putting them to great use.
-        When I'm not learning new ways to futher my skill set I enjoy all types of gaming from video games to board and card games.
-        I also get outdoors alot and enjoy running around and exploring with my lovable dog Kiba.</p>     
-    </div>
-    <p class="arrow-2">&triangledown;</p>
-  </div>
+      <h2  id="about" class="display-4 text-center mt-5">About Me</h2>
+      <div class="about-me">
+      <div class="container">
+        <p class="about-text text-center">My names Samantha Millar and I've recently completed the Treehouse Techdegree course in Front-End Web Development.
+          It's been so much fun learning new skills and I'm looking forward to putting them to great use.
+          When I'm not learning new ways to futher my skill set I enjoy all types of gaming from video games to board and card games.
+          I also get outdoors alot and enjoy running around and exploring with my lovable dog Kiba.</p>     
+      </div>
+      </div>
 
     <!-- Projects area -->
      <h2  id="projects" class="display-4 text-center">Projects</h2>
@@ -76,7 +85,7 @@
          <div class="text">
            <div class="content">
             <h4 class="card-title">Game Show App</h4>
-            <p class="card-text">The game show app show how I put Javascript to great use creating random phrases to keep gamers on their toes. </p>
+            <p class="card-text">The game show app displaying how I put Javascript to great use creating random phrases to keep gamers on their toes. </p>
            </div>
           </div>
           <a class="btn live" href="https://phyenox.github.io/treehouse-unit-6/." target="_blank" role="button">Live</a>
@@ -102,7 +111,7 @@
          <div class="text">
            <div class="content">
             <h4 class="card-title">Online Regristration Form</h4>
-            <p class="card-text">Being one of my earlier project where I learnt the use of forms and buttons utilising my HTML and CSS skills. </p>
+            <p class="card-text">Heres one of my projects where I learnt the use of forms and buttons utilising my HTML and CSS skills. </p>
            </div>
           </div>
           <a class="btn live" href="https://phyenox.github.io/Treehouse-unit-3/." target="_blank" role="button">Live</a>
@@ -121,14 +130,13 @@
           <a class="btn live" href="https://phyenox.github.io/treehouse-unit-8/." target="_blank" role="button">Live</a>
           <a class="btn" href="https://github.com/Phyenox/treehouse-unit-8" target="_blank" role="button">Code</a>
          </div>
-         <p class="arrow-3">&triangledown;</p>
         </div>
       </div>
     
 
   </main>  
 
-  <footer>
+  <footer id="contact">
   <!-- SVG linkedin icon -->
   <div class="d-flex justify-content-center my-5">
     <div class="img-fluid linkedin">
@@ -198,8 +206,10 @@
         </a>
     </div>
   </div>  
-
+  
   </footer>   
+
+  <script src="js/main.js"></script>
 </body>
 </html>
 
