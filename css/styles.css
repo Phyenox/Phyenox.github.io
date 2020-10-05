@@ -54,7 +54,12 @@ body {
 /*           Jumbotron js             */
 /* ================================== */
 
-.jumbotron i {
+.stary {
+    position: relative;
+    overflow: hidden;
+}
+
+.stary i {
     position: absolute;
     background: #fff;
     border-radius: 50%;

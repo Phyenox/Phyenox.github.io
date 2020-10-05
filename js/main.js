@@ -1,6 +1,6 @@
 function stars() {
     let count = 500;
-    let jumbotron = document.querySelector('.jumbotron');
+    let stary = document.querySelector('.stary');
     let i = 0;
     while(i < count){
         let star = document.createElement("i");
@@ -17,7 +17,7 @@ function stars() {
         star.style.animationDuration = 5+duration+'s';
         star.style.animationDelay = duration+'s';
 
-        jumbotron.appendChild(star);
+        stary.appendChild(star);
         i++
     }
 }
